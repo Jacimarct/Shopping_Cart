@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html  lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="~{base::layout(~{::section})}">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<section>
+		<div class="container card-sh" style="margin-top: 70px; margin-bottom: 100px;">
+
+			<div class="col-md-12 p-5">
+				<div class="row">
+					<div class="col-md-6 text-end">
+						<img alt="" src="/img/product_img/laptop.jpg" width="330px"
+							height="400px">
+					</div>
+
+					<div class="col-md-6">
+
+						<p class="fs-3" th:text="${product.title}">Título do produto linha 21</p>
+						<p>
+							<span class="fw-bold">Descrição : </span> <br>Computador
+							Portátil HP, 256Gb SSD
+						</p>
+						<p>
+							<span class="fw-bold"> Detalhes do Produto: </span><br>
+							Status : <span class="badge badge-success">Disponível</span> 
+									 <span class="bodge badge-warning">Esgotado</span>
+									  
+								  	<br> Categoria : <span th:text="${product.category}">Categoria do Produto</span> 
+								  	<br> Política: 7 Dias de Substituição &	Devolução
+						</p>
+
+						<p class="fs-5 fw-bold">
+							Preço :&nbsp; &nbsp; &nbsp; &nbsp; <i class="fas fa-rupee-sign"></i>
+							R&#36; 7000 <span
+								class="fs-6 text-decoration-line-through text-secondary">14000</span>
+							<span class="fs-6  text-success">50% Desconto</span>
+						</p>
+
+
+ 						<div class="row">
+							<div class="col-md-4 text-success text-center p-2">
+								<i class="fas fa-money-bill-wave fa-2x"></i>
+								<p>Pagamento na Entrega</p>
+							</div>
+							<div class="col-md-4 text-danger text-center p-2">
+								<i class="fas fa-undo-alt fa-2x"></i>
+								<p>Devolução Disponível</p>
+							</div>
+							<div class="col-md-4 text-primary text-center p-2">
+								<i class="fas fa-truck-moving fa-2x"></i>
+								<p>Frete Grátis</p>
+							</div>
+						</div>
+
+
+
+						<a href="login.jsp" class="btn btn-danger col-md-12">Inserir
+							o Cartão</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+</html>
